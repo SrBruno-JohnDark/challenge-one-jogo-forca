@@ -5,7 +5,7 @@
 }
 html{
     /* background: linear-gradient(0, #560c35, #303030); */
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
     width: 100%;
     height: 100%;
 }
@@ -16,4 +16,88 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.palavra{
+    width: 25rem;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: #b1a2a2;
+}
+.teclaLetra{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.1rem;
+    cursor: pointer;
+    /* color: #ecffe2; */
+    border-radius: 4rem;
+    background-color: #060e029b;
+    border: 0.2rem #48404dcb solid;
+    animation: teclaChange 5s linear infinite;
+}
+.situation{
+    width: 25rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid #6571dc;
+    background-color: #ffd500ea;
+}
+.divLetrasBox{
+    display: flex;
+    flex-direction: row;
+}
+.divLetras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    background-color: #6571dc;
+}
+.forcaMan{
+    width: 25rem;
+    height: 10rem;
+    margin-bottom: 0.5rem;
+    border-radius: 2rem;
+    padding: 0rem;
+    border: 0.4rem solid #00000041;
+    background-color: #23063d69;
+    animation: coloresChange 5s linear infinite;
+}
+.canvas{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+@keyframes coloresChange {
+    0%{
+        box-shadow: 0px 0px 10px 10px #7c2222;
+    }
+    50%{
+        box-shadow: 0px 0px 10px 10px #222f7c;
+    }
+    100%{
+        box-shadow: 0px 0px 10px 10px #7c2222;
+    }
+}
+
+@keyframes teclaChange {
+    0%{
+        color: #ff8181;
+    }
+    50%{
+        color: #97a6ff;
+    }
+    100%{
+        color: #ff8181;
+    }
 }
