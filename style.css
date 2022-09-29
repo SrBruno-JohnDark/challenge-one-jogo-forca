@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Quesha';
+    src: url('./game/Quesha-gndR.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding: 0.5rem;
+    color: #f1c38e;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #78430e;
+}
+body{
+    background-color: #0a6332;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.painel{
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00000073;
+}
+.painel>div{
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    font-size: 3.5rem;
+    font-family: Quesha;
+    color: #e3ab6b;
+    text-align: center;
+    border: 0.2rem #180e04 solid;
+    border-radius: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: #39230aa5;
+    animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
